@@ -90,9 +90,83 @@
 
   </nav>
 </header>
-		<main>
-
-		</main>
+		<div class="container">
+            <div class="row py-25 ">
+              <div class="col px-0 col-lg-6 mx-auto">
+                <div class="bg-white rounded-3 p-10 border">
+                  <h4 class="mb-10 text-accent-200">註冊</h4>
+                  <form>
+                    <div class="mb-4">
+                      <label for="account" class="mb-3"> <h6>會員帳號</h6></label>
+                      <input
+                        type="account"
+                        class="bg-gray-100 rounded-2 py-2 px-3 w-100 border-0"
+                        id="account"
+                        placeholder="請輸入會員帳號"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label for="password" class="mb-3"> <h6>密碼</h6></label>
+                      <input
+                        type="password"
+                        class="bg-gray-100 rounded-2 py-2 px-3 w-100 border-0"
+                        id="password"
+                        placeholder="請輸入密碼"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label for="email" class="mb-3"> <h6>電子信箱</h6></label>
+                      <input
+                        type="email"
+                        class="bg-gray-100 rounded-2 py-2 px-3 w-100 border-0"
+                        id="email"
+                        aria-describedby="emailHelp"
+                        placeholder="請輸入電子信箱"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-accent-300 text-gray-white py-3 py-lg-3 px-lg-5 w-100 my-10 rounded-5 fw-bold"
+                    >
+                      立即註冊
+                      <i class="bi bi-arrow-right ms-2"></i>
+                    </button>
+                  </form>
+        
+                  <div class="position-relative">
+                    <div class="d-flex align-items-center w-100">
+                      <div
+                        style="height: 1px; background: #adb5bd; width: 100%"
+                      ></div>
+                      <span
+                        class="text-center bg-white text-nowrap px-1 text-gray-300"
+                      >
+                        或以其他方式註冊
+                      </span>
+                      <div
+                        style="height: 1px; background: #adb5bd; width: 100%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="py-10">
+                    <button class="btn btn-gray-100 py-2 w-100 mb-1">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBtZM/T8JAGMafa4kQHSSMTCXRxMRBMK5GOjqYlNFJ/QAmTqyIg3HzIwCLjnQwrpToZqJFXRyMXYxOSmQAIuV8j9YGShv/RJ/k7tr33v7e5/4U+COxsAmeRRw2NMpQBgEJJvUmM2B9C+QCDulxE8EqQ0bRD2Q+iII+auCui3AZ7AzqcCDyBcSgUg0amxRfoTFLzSJHW36yB8KiXMCF/QkRH+bYOYGGHS/TnsnB+zRYGq/FFEj8AZc2cEqtw3NkXccP5DiS+2lwJlwBc7LBVrsjkGS+sRsGYJGI/rg/bzogLqWpc2YmWd2fzMEKYSD0eqI3pfEZHscv5DhitHmuodv3xALwNJLEwIsYdbhBgzJ4kZnp5IiJGl1CKfp63J7FUXtGhNSTnG4EVU7mrzWqWfWgkp16PshYg6UxFc291lLFhQhV16qa5odkSztZGkqeU4aygHiOhLSqFqeDv+LwXUigTknTFE8LVusthfu7ddh21OKsr46BXJhCsJoPNqZuJ2HdNLY9iNDIqek53aKbpBK9EgYRy5mKvWSGIWOOAtyl3SXRbwhrgmpRsSb+Ux8DMpnpdyeTfAAAAABJRU5ErkJggg==" alt="" />
+                      使用Google註冊
+                    </button>
+                    <button class="btn btn-gray-100 py-2 w-100 mb-1">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBvVO9SsRAEJ7d5OQKD9MdJ4gRfABLKznxAbTTVvEKnyLJA1hfcYpoZ2djf/oE2sqBsTEICgFF1Euyzk6SY/N3P819ELIz+fbb2ZkvAPNC/cIz5TOJx8qSes9rCxAWgNjA0EjSPrJvahp3fg5b7kQh3vMsBpENYyCA21Gn5VQKVYkYCxxWG5zWjx9BqdhIqN71zKEePedFds06nG8ZJCaxfv0G7meYbI62g85KX671dMOwFll4TAGnm0skcvX0De5XCP6vUK6oYR8hK4TZPSi5krmo0fro3i+eEg+DENfbpfEaRaHSoWYoqTX0KsZgvwlmQxvFwfEyvfWz11J+XNEJ+SJT+wv2I22qhFzfeX/5/X7qKaUi9oB3bqfRzu079Wdw0KRYTqsANGi2IsqFDsyIEF1eEJJ+QF9MLUZc5Vfh6kcUs6cRkxzJVXM8T5KEMOBr2K9Lzpk6AJ8x1k/cbMOsEEKY8oF54R/eZYMUmIQwhAAAAABJRU5ErkJggg==" alt="" />
+                      使用Facebook註冊
+                    </button>
+                  </div>
+                  <div class="text-center">
+                    <h6 class="fw-bold text-accent-200">
+                      已經是會員了？ <a href="login.html">點此登入</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
 		<!--
  * @Author: Yi-Ping Jiang apple80177@gmail.com
@@ -110,3 +184,9 @@
 		
     </body>
 </html>
+
+
+
+
+
+
