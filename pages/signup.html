@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<title>Vivre</title>
+    </head>
+    <body>
+		<%- include('./layout/header'); -%>
+
+		<div class="container">
+            <div class="row py-25 ">
+              <div class="col px-0 col-lg-6 mx-auto">
+                <div class="bg-white rounded-3 p-10 border">
+                  <h4 class="mb-10 text-accent-200">註冊</h4>
+                  <form>
+                    <div class="mb-4">
+                      <label for="account" class="mb-3"> <h6>會員帳號</h6></label>
+                      <input
+                        type="account"
+                        class="bg-gray-100 rounded-2 py-2 px-3 w-100 border-0"
+                        id="account"
+                        placeholder="請輸入會員帳號"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label for="password" class="mb-3"> <h6>密碼</h6></label>
+                      <input
+                        type="password"
+                        class="bg-gray-100 rounded-2 py-2 px-3 w-100 border-0"
+                        id="password"
+                        placeholder="請輸入密碼"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label for="email" class="mb-3"> <h6>電子信箱</h6></label>
+                      <input
+                        type="email"
+                        class="bg-gray-100 rounded-2 py-2 px-3 w-100 border-0"
+                        id="email"
+                        aria-describedby="emailHelp"
+                        placeholder="請輸入電子信箱"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-accent-300 text-gray-white py-3 py-lg-3 px-lg-5 w-100 my-10 rounded-5 fw-bold"
+                    >
+                      立即註冊
+                      <i class="bi bi-arrow-right ms-2"></i>
+                    </button>
+                  </form>
+        
+                  <div class="position-relative">
+                    <div class="d-flex align-items-center w-100">
+                      <div
+                        style="height: 1px; background: #adb5bd; width: 100%"
+                      ></div>
+                      <span
+                        class="text-center bg-white text-nowrap px-1 text-gray-300"
+                      >
+                        或以其他方式註冊
+                      </span>
+                      <div
+                        style="height: 1px; background: #adb5bd; width: 100%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="py-10">
+                    <button class="btn btn-gray-100 py-3 w-100 mb-2 rounded-5">
+                      <img src="../assets/images/icons-google.png" alt="" />
+                      使用 Google 註冊
+                    </button>
+                    <button class="btn btn-gray-100 py-3 w-100 mb-2 rounded-5">
+                      <img src="../assets/images/icons-facebook.png" alt="" />
+                      使用 Facebook 註冊
+                    </button>
+                  </div>
+                  <div class="text-center">
+                    <h6 class="fw-bold text-accent-200">
+                      已經是會員了？ <a href="login.html">點此登入</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+		<%- include('./layout/footer'); -%>
+
+		<script type="module" src="../main.js"></script>
+    </body>
+</html>
+
+
+
+
+
+

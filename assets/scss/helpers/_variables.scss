@@ -298,14 +298,22 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #FFFDF5;  // $blue !default;
+
+$secondary:     #FFFBE5;  //$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+
+
+$accent-100: #E0EFDE;
+$accent-200: #569573;
+$accent-300: #406C55;
+
+
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -317,7 +325,21 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+
+  "accent-100": $accent-100,
+  "accent-200": $accent-200,
+  "accent-300": $accent-300,
+
+  "gray-white": $white,
+  "gray-100": $gray-100,
+  "gray-200": $gray-300,
+  "gray-300": $gray-500,
+  "gray-400": $gray-600,
+  "gray-500": $gray-800,
+  "gray-600": $gray-900
+
+
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -407,14 +429,35 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // You can add more entries to the $spacers map, should you need more variation.
 
 // scss-docs-start spacer-variables-maps
-$spacer: 1rem !default;
+$spacer: 1rem !default; 
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25,   // 4px
+  2: $spacer * .5,    // 8px
+  3: $spacer * .75,   // 12px
+  4: $spacer,
+  5: $spacer * 1.25,  // 20px
+  6: $spacer * 1.5,   // 24px
+  7: $spacer * 1.75,  // 28px
+  8: $spacer * 2,     // 32px
+  9: $spacer * 2.25,  // 36px
+  10: $spacer * 2.5,  // 40px
+  11: $spacer * 2.75, // 44px
+  12: $spacer * 3,    // 48px
+  13: $spacer * 3.25, // 52px
+  14: $spacer * 3.5,  // 56px
+  15: $spacer * 3.75, // 60px
+  16: $spacer * 4,    // 64
+  17: $spacer * 4.25, // 68px
+  18: $spacer * 4.5,  // 72px
+  19: $spacer * 4.75, // 76px
+  20: $spacer * 5,    // 80px
+  21: $spacer * 5.25, // 84px
+  22: $spacer * 5.5,  // 88px
+  23: $spacer * 5.75, // 92px
+  24: $spacer * 6,    // 96px
+  25: $spacer * 6.25  // 100px
+
 ) !default;
 // scss-docs-end spacer-variables-maps
 

@@ -1,3 +1,80 @@
-<nav>
-	
-</nav>
+<!--
+ * @Author: Yi-Ping Jiang apple80177@gmail.com
+ * @Date: 2024-09-08 19:29:58
+ * @LastEditors: Yi-Ping Jiang apple80177@gmail.com
+ * @LastEditTime: 2024-09-08 23:44:51
+ * @FilePath: /project/subscribe_website/layout/header.ejs
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<header class="container border-bottom">
+
+
+<nav class="navbar navbar-expand-lg py-lg-9">
+
+        <a class="navbar-brand" href="index.html">Vivre</a>
+
+        <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body align-items-center">
+          <form class="d-flex me-auto position-relative" role="search">
+            <input class="form-control me-2 rounded-5" type="search" placeholder="搜尋文章" aria-label="Search" />
+            <button class="btn position-absolute end-0" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+              <ul class="navbar-nav ms-auto justify-content-lg-between align-items-lg-center">
+                <li class="nav-item">
+                  <a class="nav-link px-lg-5 fw-bold py-3" href="#">所有文章</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-lg-5  fw-bold py-3" href="subscribe.html">訂閱方案</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-lg-5 fw-bold py-3" href="#">關於我們</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-accent-200 rounded-5 px-lg-5 fw-bold py-3 w-100 text-gray-white" type="button" href="signup.html">登入 / 註冊</a>
+                </li>
+              </ul>
+              
+        </div>
+        </div>
+
+      
+      <!-- <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+        <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="input-group w-lg-276">
+                    <input type="text" class="form-control border-end-0 rounded-start-5" placeholder="搜尋文章">
+                    <button class="btn btn-accent link-accent fs-4 lh-1 bg-white border border-start-0" type="button">
+                    <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">所有文章</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">訂閱方案</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">關於我們</a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+
+
+  </nav>
+</header>
